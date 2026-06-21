@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wissi KR WebSite</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121214; /* 깔끔한 다크 모드 배경 */
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 상단 네비게이션 바 (레이아웃 배치) */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #1a1a1e;
+            border-bottom: 1px solid #2f2f35;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        /* 디스코드 우측 상단 버튼 스타일 */
+        .discord-btn {
+            background-color: #5865F2; /* 디스코드 공식 브랜드 컬러 */
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .discord-btn:hover {
+            background-color: #4752C4;
+            transform: translateY(-1px);
+        }
+
+        .discord-btn:active {
+            transform: translateY(0);
+        }
+
+        /* 중앙 메인 콘텐츠 영역 (정중앙 배치) */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .main-title {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+            /* 그라데이션 타이틀 효과 */
+            background: linear-gradient(45deg, #ffffff, #a5a5b0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sub-title {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #9898a0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* 하단 푸터 영역 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            color: #52525b;
+            background-color: #1a1a1e;
+            border-top: 1px solid #2f2f35;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Wissi KR WebSite</div>
+        <a href="https://discord.gg/your-link" class="discord-btn" target="_blank">디스코드</a>
+    </header>
+
+    <main>
+        <h1 class="main-title">Wissi KR</h1>
+        <div class="sub-title">Official Website</div>
+    </main>
+
+    <footer>
+        &copy; 2026 Wissi KR. All rights reserved.
+    </footer>
+
+</body>
+</html>
